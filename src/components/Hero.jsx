@@ -9,8 +9,8 @@ export default function Hero({ isDecrypted }) {
           <FiLock className="icon-inline" /> <Cipher text="RSA_2048_SECURED" isDecrypted={isDecrypted} speed={50} />
         </div>
         <h1 className="hero-title">
-          <Cipher text="Securing the Future" isDecrypted={isDecrypted} speed={30} /><br />
-          <Cipher text="One" isDecrypted={isDecrypted} speed={50} /> <span className="highlight-text"><Cipher text="Cipher" isDecrypted={isDecrypted} speed={60} /></span> <Cipher text="at a Time." isDecrypted={isDecrypted} speed={30} />
+          <Cipher text="Engineering Trust Through" isDecrypted={isDecrypted} speed={30} /><br />
+          <Cipher text="Cryptographic" isDecrypted={isDecrypted} speed={50} /> <span className="highlight-text"><Cipher text="Proofs" isDecrypted={isDecrypted} speed={60} /></span>
         </h1>
         <p className="hero-subtitle">
           <Cipher 
