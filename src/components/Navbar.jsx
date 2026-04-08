@@ -6,7 +6,7 @@ export default function Navbar({ isDecrypted }) {
     <nav className="navbar glass-panel">
       <div className="container">
         <a href="#" className="logo">
-          <FiShield /> <Cipher text="CryptoDev" isDecrypted={isDecrypted} speed={40} />
+          <FiShield /> <Cipher text="Prayag Pathak" isDecrypted={isDecrypted} speed={40} />
         </a>
         <ul className="nav-links">
           <li><a href="#about"><Cipher text="About" isDecrypted={isDecrypted} speed={40} /></a></li>

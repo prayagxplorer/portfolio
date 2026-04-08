@@ -33,7 +33,7 @@ function App() {
         </main>
         <footer className="footer text-center">
           <div className="container">
-            <p>System.out.println("© " + new Date().getFullYear() + " | Encrypted & Secured by First-Year Student");</p>
+            <p>System.out.println("© " + new Date().getFullYear() + " | Prayag Pathak | Vellore Institute of Technology");</p>
           </div>
         </footer>
       </div>
