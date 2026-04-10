@@ -298,3 +298,177 @@ section {
   color: var(--accent-color);
 }
 
+/* ─── Wider modal variant for reviews ─── */
+.modal-wide {
+  max-width: 780px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* ─── Mentor Review Section ─── */
+.review-section {
+  border-top: 1px solid var(--card-border);
+  padding-top: 1.75rem;
+}
+
+.review-section::before {
+  content: '// MENTOR_REVIEW';
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent-secondary);
+  letter-spacing: 0.08em;
+  margin-bottom: 1.25rem;
+}
+
+/* Mentor identity header */
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.review-header-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.review-mentor-name {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.review-mentor-role {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  margin: 0.15rem 0 0;
+}
+
+/* Star rating */
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.star {
+  font-size: 1.1rem;
+  color: var(--card-border);
+  transition: color 0.2s ease;
+}
+
+.star.filled {
+  color: #f59e0b;
+  filter: drop-shadow(0 0 4px rgba(245, 158, 11, 0.5));
+}
+
+.rating-text {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-left: 0.4rem;
+}
+
+/* Performance quote */
+.review-performance {
+  background: rgba(59, 130, 246, 0.06);
+  border-left: 3px solid var(--accent-color);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Strengths / Improvements grid */
+.review-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.review-block {
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.review-strengths {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.review-improvements {
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.review-block-title {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.85rem;
+  text-transform: uppercase;
+}
+
+.review-strengths .review-block-title {
+  color: var(--accent-secondary);
+}
+
+.review-improvements .review-block-title {
+  color: #f59e0b;
+}
+
+.review-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.review-list li {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.review-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.75rem;
+  color: currentColor;
+  opacity: 0.7;
+}
+
+.review-strengths .review-list li::before {
+  color: var(--accent-secondary);
+}
+
+.review-improvements .review-list li::before {
+  color: #f59e0b;
+}
